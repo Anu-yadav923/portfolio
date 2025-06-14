@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; }
+    header {
+      background: #222;
+      color: #bbd0ff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header nav a {
+      color: #a68a64;
+      text-decoration: none;
+      margin-left: 1rem;
+    }
+    .hero {
+      background:#e7c6ff;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+    .hero p { font-size: 1.2rem; }
+
+    .section {
+      padding: 3rem 2rem;
+    }
+    .projects, .about, .contact {
+      max-width: 1000px;
+      margin: auto;
+    }
+    .project-card {
+      background: #e7d8c9;
+      padding: 1rem;
+      margin: 1rem 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .about p, .project-card p {
+      margin-top: 0.5rem;
+    }
+
+    .social-icons a {
+      margin: 0 0.5rem;
+      color: #222;
+      font-size: 1.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #a68a64;
+      color: #fff;
+    }
+
+    @media (min-width: 768px) {
+      .project-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body background-color="#bbd0ff">
+  <header>
+    <h2>Anu's Portfolio</h2>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Hi, I'm ANU 👋</h1>
+    <p>Frontend-Web Developer </p>
+  </section>
+
+  <section class="section projects" id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Project One</h3>
+        <p>Made a responsive frontend clone of Amazon, using HTML and CSS.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project from Hackathon</h3>
+        <ul>
+        <p><li>Hack Horizon 2025-Finalist.</li>
+          
+           <li> Role: frontend Developer</li>
+           <li>Tech used: HTML,CSS,Bootstrap,python with Django,Chatling.ai</li> 
+            
+           <li> Descriptions: Built a website related to Mental wellness and AI tool for Disease risk where the user can describe their symptoms according to which the AI detect the Disease and give precautions .
+            paricipated among 150 teams.</li>
+            </ul>
+
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section about" id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a web developer with experience in frontend technologies like HTML, CSS, JS, React, etc.
+      I love crafting user-friendly interfaces and solving UI challenges.
+    </p>
+  </section>
+
+  <section class="section contact" id="contact">
+    <h2>Contact</h2>
+    <p>Email: anuy8306@gmail.com</p>
+    <div class="social-icons">
+      <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Anukmari. All rights reserved.</p>
+  </footer>
+</body>
+</html>
